@@ -1,0 +1,13 @@
+p>span {
+    color: rgb(255, 0, 234);
+}
+
+h1 + h2 {
+    color: rgb(199, 45, 160);
+}
+
+a.unique {
+    color: rgb(221, 163, 221);
+    font-size: 50px;
+    background-color: rgb(124, 71, 124);
+}
