@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+       section.logo{
+           margin: 10px auto;
+           width: 1072px;
+           border: 0px #777 solid;
+           height: 250px;
+           background: url(/05-css3/imgs/riverdalelogo.png) no-repeat center;           
+        }
+        section.veronica{
+            margin:50px auto;
+            width: 1074px;
+            height: 375px;
+            border: 0px #777 solid;
+
+        }
+        div.personajes{
+            margin-left:20px;
+            width:250px;
+            height:375px;
+            border: 0px #777 solid;
+            display: inline-block;
+            font-size: 1.7em;
+            line-height: 1.5em;
+            text-align: center;
+            vertical-align: top;
+        }
+        div.veronica{
+            background:url(/05-css3/imgs/veronica.jpg) no-repeat center;
+            background-size: cover;
+            margin-left: 0px;
+        }
+        div.archie{
+            background:url(/05-css3/imgs/archie.jpg);
+            background-size: cover;
+        }
+        div.betty{
+            background:url(/05-css3/imgs/betty.jpg);
+            background-size: cover;
+        }
+        div.cole{
+            background:url(/05-css3/imgs/cole.jpg);
+            background-size: cover;
+        }
+        a.person:link,a.person:visited{
+            background-color: #0008;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+            height: 50px;
+            width: 250px;
+            transition: all 1s ease-in;
+            position: relative;
+            top: 325px;
+            
+        }
+        div.personajes:hover a.person{
+            height: 100px;
+            line-height: 3em;
+            position: relative;
+            top: 275px;
+
+
+        }
+        section.container{
+            margin:50px auto;
+            width: 1072px;
+            height: 375px;
+            border: 1px #777 dashed;
+        }
+        div.riverimage, div.riverdalimage{
+            width:250px;
+            height:375px;
+            border: 1px #777 solid;
+        }
+        div.riverimage{
+            background:url(/05-css3/imgs/rivertodos.jpg);
+            background-size: cover;
+        }
+        div.riverdalimage{
+            background:url(/05-css3/imgs/riverdale-poster.jpg);
+            background-size: cover;
+        }
+        div.rivertodostext{
+            border: 0px #777 solid;
+            width: 512px; 
+            height: 375px;
+            margin-left:20px;
+            vertical-align: top;
+        }
+        div.nada{
+            display: inline-block;
+            
+        }
+        span{
+            font-size: 2em;
+            font-weight: bold;
+            font-style:oblique;
+            margin-top: 50px;
+            display:block ;
+        }
+        p{
+            font-style: oblique;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+       @media(max-width:1112px){
+           section.logo{
+            width: 550px;
+            background-size: cover;
+           }
+           section.veronica{
+            width: 525px;
+            height: 770px;
+           }
+           div.personajes{
+               display: inline-flex;
+           }
+           div.betty{
+               margin-left: 0px;
+           }
+           div.archie{
+               margin-bottom: 20px;
+           }
+           section.container{
+               width: 525px;
+           }
+          div.rivertodostext{
+              width: 245px;
+              margin-left: 10px;
+          }
+          p{
+              height: 280px;
+              overflow: scroll;
+          }
+          span{
+              margin-top: 30px;
+          }
+          ::-webkit-scrollbar {
+                display: none;
+            }
+       }
+
+
+       @media(max-width:780px){
+           section.logo{
+            width: 250px;
+            background-size: contain;
+           }
+           section.veronica{
+            width: 250px;
+            height: 1570px;
+           }
+           div.personajes{
+               display: inline-flex;
+               margin-left: 0px;;
+           }
+           section.container{
+               width: 250px;
+               height: 750px;
+           }
+           div.veronica, div.archie, div.betty{
+               margin-bottom: 20px;
+           }
+          div.rivertodostext{
+              width: 250px; 
+              margin-left: 0px;       
+          }
+          p{
+              height: 280px;
+              overflow: scroll;
+          }
+          span{
+              margin-top: 30px;
+          }
+          ::-webkit-scrollbar {
+                display: none;
+            }
+       }
+    </style>
+</head>
+<body>
+    <!-- Titulo -->
+    <section class="logo"></section>
+
+    <!-- principales imagenes -->
+    <section class="veronica">
+       <div class="veronica personajes">
+           <a href="#" class="veronica person">Veronica</a>
+       </div> 
+        <div class="archie personajes">
+            <a href="#" class="archie person">Archie</a>
+        </div> 
+        <div class="betty personajes">
+            <a href="#" class="betty person">Betty</a>
+        </div> 
+        <div class="cole personajes">
+            <a href="#" class="cole person">Cole</a>
+        </div> 
+     </section>
+     <!-- Seccion imagenes texto -->
+   <section class="container">
+       <div class="riverimage nada"></div>
+       <div class="rivertodostext nada">
+            <span>PERSONAJES</span> 
+           <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A iste cupiditate, soluta fugit, perferendis neque eaque, quia quasi exercitationem consequatur quidem debitis reprehenderit reiciendis blanditiis dicta laboriosam quo laborum assumenda! Aut ratione in debitis minima pariatur est, totam illo sapiente velit distinctio nostrum adipisci similique placeat a officiis autem dolorum illum tenetur molestias ipsa assumenda inventore exercitationem sunt! Magnam esse aliquid sint doloremque nulla, quod repudiandae cupiditate corporis numquam. Non, aliquam! Tempore quam dolore blanditiis officia inventore doloremque quasi, omnis nisi? Vero amet odit eius.</p>
+       </div>
+       
+   </section>
+   <section class="container">
+        <div class="riverdalimage nada"></div>
+        <div class="rivertodostext nada">
+            <span>ELENCO</span>
+            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati possimus ipsa vitae exercitationem, odio aliquam dolor quos corporis tempore ex ab ad fugiat laboriosam odit reprehenderit reiciendis quisquam magni quas suscipit. Odit delectus quos qui tempora nisi architecto blanditiis ex, repellat recusandae natus fugiat! Corrupti qui amet quas eius quisquam suscipit excepturi ipsa eos expedita vero similique, ut aut molestiae, tenetur voluptatibus perspiciatis. Eius laudantium voluptas ratione ipsa tempora voluptatem quod impedit nisi, distinctio debitis. Tempora veritatis nihil ipsa veniam dolorem earum dicta, saepe neque.</p>
+        </div>
+   </section> 
+
+</body>
+    <main>
+        <h1> <span><a href="index.html">&larr;</a></span>Challenge</h1>
+        <section class="Challenge"></section>
+    </main>
+
+</html>
