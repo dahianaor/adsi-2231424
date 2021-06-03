@@ -1,0 +1,16 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Challenge Pug
+	style.
+			body{
+				margin: 4px;
+			}
+			div {
+				height: 87px;
+				margin: 2px;
+			}
+	body
+		each val, index in ['#fff', '#FDDFFD', '#FCADFC', '#F084F0', '#E269E2', '#D242D2', '#B22AB2', '#971097', '#7E0B7E', '#4D024D']
+				div(style='background-color:'+val)
